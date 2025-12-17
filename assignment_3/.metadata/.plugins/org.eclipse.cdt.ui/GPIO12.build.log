@@ -1,0 +1,17 @@
+08:56:53 **** Incremental Build of configuration Debug for project GPIO12 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "GPIO12.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\aditi\OneDrive\Desktop\Sunbeam_Internship\ARM_94076_Aditi\assignment_3\GPIO12\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO12.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPIO12.elf
+ 
+arm-none-eabi-size  GPIO12.elf 
+arm-none-eabi-objdump -h -S GPIO12.elf  > "GPIO12.list"
+   text	   data	    bss	    dec	    hex	filename
+   1040	      4	   1564	   2608	    a30	GPIO12.elf
+Finished building: default.size.stdout
+ 
+Finished building: GPIO12.list
+ 
+
+08:56:54 Build Finished. 0 errors, 0 warnings. (took 1s.192ms)
+

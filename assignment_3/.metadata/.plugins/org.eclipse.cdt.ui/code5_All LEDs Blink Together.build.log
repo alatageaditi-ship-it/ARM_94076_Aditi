@@ -1,0 +1,10 @@
+10:34:10 **** Incremental Build of configuration Debug for project code5_All LEDs Blink Together ****
+make -j16 all 
+arm-none-eabi-size  code5_All\ LEDs\ Blink\ Together.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1040	      4	   1564	   2608	    a30	code5_All LEDs Blink Together.elf
+Finished building: default.size.stdout
+ 
+
+10:34:10 Build Finished. 0 errors, 0 warnings. (took 402ms)
+

@@ -1,0 +1,11 @@
+19:00:41 **** Incremental Build of configuration Debug for project GPIO ****
+make -j16 all 
+arm-none-eabi-gcc -o "GPIO.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\aditi\OneDrive\Desktop\Sunbeam_Internship\ARM_94076_Aditi\assignment_3\GPIO\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Src/main.o: in function `main':
+C:/Users/aditi/OneDrive/Desktop/Sunbeam_Internship/ARM_94076_Aditi/assignment_3/GPIO/Debug/../Src/main.c:36:(.text.main+0xc): undefined reference to `led_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:63: GPIO.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+
+19:00:42 Build Failed. 2 errors, 0 warnings. (took 740ms)
+
