@@ -1,0 +1,10 @@
+10:25:53 **** Incremental Build of configuration Debug for project code2_Toggle LED Using Switch ****
+make -j16 all 
+arm-none-eabi-size  code2_Toggle\ LED\ Using\ Switch.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1124	      4	   1564	   2692	    a84	code2_Toggle LED Using Switch.elf
+Finished building: default.size.stdout
+ 
+
+10:25:53 Build Finished. 0 errors, 0 warnings. (took 396ms)
+

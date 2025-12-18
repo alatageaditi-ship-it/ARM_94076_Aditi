@@ -1,0 +1,10 @@
+10:43:19 **** Incremental Build of configuration Debug for project code3_Switch based LED Sequence ****
+make -j16 all 
+arm-none-eabi-size  code3_Switch\ based\ LED\ Sequence.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1196	      4	   1564	   2764	    acc	code3_Switch based LED Sequence.elf
+Finished building: default.size.stdout
+ 
+
+10:43:19 Build Finished. 0 errors, 0 warnings. (took 325ms)
+

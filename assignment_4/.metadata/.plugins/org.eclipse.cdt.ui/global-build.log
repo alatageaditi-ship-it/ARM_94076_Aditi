@@ -1,0 +1,22 @@
+10:43:15 **** Incremental Build of configuration Debug for project code3_Switch based LED Sequence ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/my_led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/my_led.d" -MT"Src/my_led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/my_led.o"
+arm-none-eabi-gcc -o "code3_Switch based LED Sequence.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\aditi\OneDrive\Desktop\Sunbeam_Internship\ARM_94076_Aditi\assignment_4\code3_Switch based LED Sequence\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="code3_Switch based LED Sequence.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: code3_Switch based LED Sequence.elf
+ 
+arm-none-eabi-size  code3_Switch\ based\ LED\ Sequence.elf 
+arm-none-eabi-objdump -h -S code3_Switch\ based\ LED\ Sequence.elf  > "code3_Switch based LED Sequence.list"
+   text	   data	    bss	    dec	    hex	filename
+   1196	      4	   1564	   2764	    acc	code3_Switch based LED Sequence.elf
+Finished building: default.size.stdout
+ 
+Finished building: code3_Switch based LED Sequence.list
+ 
+10:43:19 **** Incremental Build of configuration Debug for project code3_Switch based LED Sequence ****
+make -j16 all 
+arm-none-eabi-size  code3_Switch\ based\ LED\ Sequence.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1196	      4	   1564	   2764	    acc	code3_Switch based LED Sequence.elf
+Finished building: default.size.stdout
+ 
