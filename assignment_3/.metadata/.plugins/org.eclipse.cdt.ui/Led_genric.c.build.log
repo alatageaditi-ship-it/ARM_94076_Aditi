@@ -1,0 +1,10 @@
+08:49:57 **** Incremental Build of configuration Debug for project Led_genric.c ****
+make -j16 all 
+arm-none-eabi-size  Led_genric.c.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1040	      4	   1564	   2608	    a30	Led_genric.c.elf
+Finished building: default.size.stdout
+ 
+
+08:49:57 Build Finished. 0 errors, 0 warnings. (took 202ms)
+

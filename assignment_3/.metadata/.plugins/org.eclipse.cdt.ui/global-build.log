@@ -1,21 +1,104 @@
-10:57:02 **** Incremental Build of configuration Debug for project code6_LED Toggle Without Using led_on or led_off ****
+08:45:22 **** Build of configuration Debug for project Switch.c ****
 make -j16 all 
-arm-none-eabi-size  code6_LED\ Toggle\ Without\ Using\ led_on\ or\ led_off.elf 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/itm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/itm.d" -MT"Src/itm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/itm.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/my_led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/my_led.d" -MT"Src/my_led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/my_led.o"
+arm-none-eabi-gcc "../Src/my_switch.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/my_switch.d" -MT"Src/my_switch.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/my_switch.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/system_stm32f4xx.o"
+arm-none-eabi-gcc -o "Switch.c.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\aditi\OneDrive\Desktop\Sunbeam_Internship\IIT-08-A-ARM\Day-4\Switch.c\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Switch.c.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Switch.c.elf
+ 
+arm-none-eabi-size  Switch.c.elf 
+arm-none-eabi-objdump -h -S Switch.c.elf  > "Switch.c.list"
    text	   data	    bss	    dec	    hex	filename
-    964	      0	   1568	   2532	    9e4	code6_LED Toggle Without Using led_on or led_off.elf
+   1156	      4	   1564	   2724	    aa4	Switch.c.elf
 Finished building: default.size.stdout
  
-10:57:06 **** Incremental Build of configuration Debug for project code6_LED Toggle Without Using led_on or led_off ****
+Finished building: Switch.c.list
+ 
+08:45:56 **** Incremental Build of configuration Debug for project Switch.c ****
 make -j16 all 
-arm-none-eabi-size  code6_LED\ Toggle\ Without\ Using\ led_on\ or\ led_off.elf 
+arm-none-eabi-size  Switch.c.elf 
    text	   data	    bss	    dec	    hex	filename
-    964	      0	   1568	   2532	    9e4	code6_LED Toggle Without Using led_on or led_off.elf
+   1156	      4	   1564	   2724	    aa4	Switch.c.elf
 Finished building: default.size.stdout
  
-10:57:12 **** Incremental Build of configuration Debug for project code6_LED Toggle Without Using led_on or led_off ****
+08:47:00 **** Incremental Build of configuration Debug for project Switch.c ****
 make -j16 all 
-arm-none-eabi-size  code6_LED\ Toggle\ Without\ Using\ led_on\ or\ led_off.elf 
+arm-none-eabi-size  Switch.c.elf 
    text	   data	    bss	    dec	    hex	filename
-    964	      0	   1568	   2532	    9e4	code6_LED Toggle Without Using led_on or led_off.elf
+   1156	      4	   1564	   2724	    aa4	Switch.c.elf
+Finished building: default.size.stdout
+ 
+08:47:14 **** Incremental Build of configuration Debug for project Switch.c ****
+make -j16 all 
+arm-none-eabi-size  Switch.c.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1156	      4	   1564	   2724	    aa4	Switch.c.elf
+Finished building: default.size.stdout
+ 
+08:47:52 **** Build of configuration Debug for project Led_genric.c ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/itm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/itm.d" -MT"Src/itm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/itm.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/my_led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/my_led.d" -MT"Src/my_led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/my_led.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/system_stm32f4xx.o"
+arm-none-eabi-gcc -o "Led_genric.c.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\aditi\OneDrive\Desktop\Sunbeam_Internship\IIT-08-A-ARM\Day-4\Led_genric.c\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_genric.c.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_genric.c.elf
+ 
+arm-none-eabi-size  Led_genric.c.elf 
+arm-none-eabi-objdump -h -S Led_genric.c.elf  > "Led_genric.c.list"
+   text	   data	    bss	    dec	    hex	filename
+   1040	      4	   1564	   2608	    a30	Led_genric.c.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_genric.c.list
+ 
+08:47:58 **** Incremental Build of configuration Debug for project Switch.c ****
+make -j16 all 
+arm-none-eabi-size  Switch.c.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1156	      4	   1564	   2724	    aa4	Switch.c.elf
+Finished building: default.size.stdout
+ 
+08:49:52 **** Incremental Build of configuration Debug for project Led_genric.c ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Led_genric.c.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\aditi\OneDrive\Desktop\Sunbeam_Internship\IIT-08-A-ARM\Day-4\Led_genric.c\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_genric.c.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_genric.c.elf
+ 
+arm-none-eabi-size  Led_genric.c.elf 
+arm-none-eabi-objdump -h -S Led_genric.c.elf  > "Led_genric.c.list"
+   text	   data	    bss	    dec	    hex	filename
+   1040	      4	   1564	   2608	    a30	Led_genric.c.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_genric.c.list
+ 
+08:49:57 **** Incremental Build of configuration Debug for project Led_genric.c ****
+make -j16 all 
+arm-none-eabi-size  Led_genric.c.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1040	      4	   1564	   2608	    a30	Led_genric.c.elf
+Finished building: default.size.stdout
+ 
+08:51:01 **** Incremental Build of configuration Debug for project Led.c ****
+make -j16 all 
+arm-none-eabi-size  Led.c.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1040	      4	   1564	   2608	    a30	Led.c.elf
+Finished building: default.size.stdout
+ 
+08:51:48 **** Incremental Build of configuration Debug for project Switch.c ****
+make -j16 all 
+arm-none-eabi-size  Switch.c.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1156	      4	   1564	   2724	    aa4	Switch.c.elf
 Finished building: default.size.stdout
  
