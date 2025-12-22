@@ -1,0 +1,10 @@
+09:47:54 **** Incremental Build of configuration Debug for project code3_Extend EXTI Functionality_Design Thinking ****
+make -j16 all 
+arm-none-eabi-size  code3_Extend\ EXTI\ Functionality_Design\ Thinking.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1412	      4	   1572	   2988	    bac	code3_Extend EXTI Functionality_Design Thinking.elf
+Finished building: default.size.stdout
+ 
+
+09:47:54 Build Finished. 0 errors, 0 warnings. (took 400ms)
+

@@ -1,0 +1,28 @@
+09:47:39 **** Incremental Build of configuration Debug for project code3_Extend EXTI Functionality_Design Thinking ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/ext_intr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/ext_intr.d" -MT"Src/ext_intr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/ext_intr.o"
+arm-none-eabi-gcc -o "code3_Extend EXTI Functionality_Design Thinking.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\aditi\OneDrive\Desktop\Sunbeam_Internship\ARM_94076_Aditi\assignment_5\code3_Extend EXTI Functionality_Design Thinking\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="code3_Extend EXTI Functionality_Design Thinking.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: code3_Extend EXTI Functionality_Design Thinking.elf
+ 
+arm-none-eabi-size  code3_Extend\ EXTI\ Functionality_Design\ Thinking.elf 
+arm-none-eabi-objdump -h -S code3_Extend\ EXTI\ Functionality_Design\ Thinking.elf  > "code3_Extend EXTI Functionality_Design Thinking.list"
+   text	   data	    bss	    dec	    hex	filename
+   1412	      4	   1572	   2988	    bac	code3_Extend EXTI Functionality_Design Thinking.elf
+Finished building: default.size.stdout
+ 
+Finished building: code3_Extend EXTI Functionality_Design Thinking.list
+ 
+09:47:45 **** Incremental Build of configuration Debug for project code3_Extend EXTI Functionality_Design Thinking ****
+make -j16 all 
+arm-none-eabi-size  code3_Extend\ EXTI\ Functionality_Design\ Thinking.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1412	      4	   1572	   2988	    bac	code3_Extend EXTI Functionality_Design Thinking.elf
+Finished building: default.size.stdout
+ 
+09:47:54 **** Incremental Build of configuration Debug for project code3_Extend EXTI Functionality_Design Thinking ****
+make -j16 all 
+arm-none-eabi-size  code3_Extend\ EXTI\ Functionality_Design\ Thinking.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1412	      4	   1572	   2988	    bac	code3_Extend EXTI Functionality_Design Thinking.elf
+Finished building: default.size.stdout
+ 

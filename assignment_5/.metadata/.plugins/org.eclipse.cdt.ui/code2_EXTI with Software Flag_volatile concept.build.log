@@ -1,0 +1,10 @@
+09:24:55 **** Incremental Build of configuration Debug for project code2_EXTI with Software Flag_volatile concept ****
+make -j16 all 
+arm-none-eabi-size  code2_EXTI\ with\ Software\ Flag_volatile\ concept.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1296	      4	   1572	   2872	    b38	code2_EXTI with Software Flag_volatile concept.elf
+Finished building: default.size.stdout
+ 
+
+09:24:56 Build Finished. 0 errors, 0 warnings. (took 492ms)
+
