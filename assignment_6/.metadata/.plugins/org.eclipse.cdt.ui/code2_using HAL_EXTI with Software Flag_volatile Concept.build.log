@@ -1,0 +1,26 @@
+08:59:13 **** Incremental Build of configuration Debug for project code2_using HAL_EXTI with Software Flag_volatile Concept ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:21:1: warning: data definition has no type or storage class
+   21 | LED_Toggle=0;
+      | ^~~~~~~~~~
+../Core/Src/main.c:21:1: warning: type defaults to 'int' in declaration of 'LED_Toggle' [-Wimplicit-int]
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:74:13: warning: implicit declaration of function 'LED_Init' [-Wimplicit-function-declaration]
+   74 |             LED_Init();
+      |             ^~~~~~~~
+../Core/Src/main.c:75:13: warning: implicit declaration of function 'EXTI0_Init'; did you mean 'EXTI_IT'? [-Wimplicit-function-declaration]
+   75 |             EXTI0_Init();
+      |             ^~~~~~~~~~
+      |             EXTI_IT
+../Core/Src/main.c:83:21: error: called object 'LED_Toggle' is not a function or function pointer
+   83 |                     LED_Toggle();
+      |                     ^~~~~~~~~~
+../Core/Src/main.c:21:1: note: declared here
+   21 | LED_Toggle=0;
+      | ^~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+
+08:59:14 Build Failed. 2 errors, 4 warnings. (took 733ms)
+

@@ -569,3 +569,22 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2025-12-22 09:29:27.874
 !MESSAGE Indexed 'code3_Extend EXTI Functionality_Design Thinking' (7 sources, 66 headers) in 0.397 sec: 3,435 declarations; 5,799 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.022%)
+!SESSION 2025-12-23 08:49:23.603 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  C:\Users\aditi\OneDrive\Desktop\Sunbeam_Internship\ARM_94076_Aditi\assignment_5\code1_Modify Interrupt Trigger\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\aditi\OneDrive\Desktop\Sunbeam_Internship\ARM_94076_Aditi\assignment_5\code1_Modify Interrupt Trigger\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-12-23 08:50:16.894
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-12-23 08:50:16.894
+!MESSAGE Log4j2 initialized with config file C:\Users\aditi\OneDrive\Desktop\Sunbeam_Internship\ARM_94076_Aditi\assignment_5\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-12-23 08:50:27.135
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-23 08:50:31.280
+!MESSAGE Indexed 'code1_Modify Interrupt Trigger' (7 sources, 66 headers) in 3.69 sec: 3,435 declarations; 5,802 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.022%)

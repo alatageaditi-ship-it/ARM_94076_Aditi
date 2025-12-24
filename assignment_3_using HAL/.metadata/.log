@@ -1,0 +1,33 @@
+!SESSION 2025-12-24 10:01:33.768 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-12-24 10:02:00.615
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-12-24 10:02:00.618
+!MESSAGE Log4j2 initialized with config file C:\Users\aditi\OneDrive\Desktop\Sunbeam_Internship\ARM_94076_Aditi\assignment_3_using HAL\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-12-24 10:02:05.755
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-24 10:04:00.155
+!MESSAGE Indexed 'code1_Single LED Blink' (19 sources, 81 headers) in 4.52 sec: 4,442 declarations; 18,507 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0087%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-24 10:10:43.788
+!MESSAGE Indexed 'code2_Alternate LED Blink' (19 sources, 81 headers) in 3.41 sec: 4,442 declarations; 18,507 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0087%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-24 10:16:57.866
+!MESSAGE Indexed 'code3_Running LED_Left to Right' (19 sources, 81 headers) in 2.14 sec: 4,442 declarations; 18,507 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0087%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-24 10:33:50.014
+!MESSAGE Indexed 'code4_Running LED_Rigth to Left' (19 sources, 81 headers) in 2.42 sec: 4,442 declarations; 18,507 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0087%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-24 10:41:31.817
+!MESSAGE Indexed 'code5_All LEDs Blink Together' (19 sources, 81 headers) in 1.22 sec: 4,442 declarations; 18,507 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0087%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-24 10:45:11.612
+!MESSAGE Indexed 'code6_LED Toggle Without Using led_on_off' (19 sources, 81 headers) in 1.81 sec: 4,442 declarations; 18,507 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0087%)
