@@ -1,0 +1,20 @@
+10:49:27 **** Incremental Build of configuration Debug for project code3_UART String Processing_Polling Mode ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:100:4: warning: implicit declaration of function 'HAL_UART_Transmit' [-Wimplicit-function-declaration]
+  100 |    HAL_UART_Transmit(&huart2, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
+      |    ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:100:23: error: 'huart2' undeclared (first use in this function)
+  100 |    HAL_UART_Transmit(&huart2, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
+      |                       ^~~~~~
+../Core/Src/main.c:100:23: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:155:1: error: expected identifier or '(' before '}' token
+  155 | }
+      | ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+
+10:49:28 Build Failed. 3 errors, 1 warnings. (took 569ms)
+

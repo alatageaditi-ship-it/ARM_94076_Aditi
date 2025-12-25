@@ -1,0 +1,13 @@
+10:40:46 **** Incremental Build of configuration Debug for project code3_UART String Processing (Polling Mode ****
+make -j16 all 
+arm-none-eabi-size  code3_UART\ String\ Processing\ (Polling\ Mode.elf 
+arm-none-eabi-objdump -h -S code3_UART\ String\ Processing\ (Polling\ Mode.elf  > "code3_UART String Processing (Polling Mode.list"
+c:/st/stm32cubeide_1.19.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_2.2.0.202409170845/tools/bin/sh: syntax error: unexpected "("
+make: *** [makefile:69: default.size.stdout] Error 2
+make: *** Waiting for unfinished jobs....
+c:/st/stm32cubeide_1.19.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_2.2.0.202409170845/tools/bin/sh: syntax error: unexpected "("
+make: *** [makefile:74: code3_UART String Processing (Polling Mode.list] Error 2
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+
+10:40:46 Build Failed. 3 errors, 0 warnings. (took 441ms)
+
