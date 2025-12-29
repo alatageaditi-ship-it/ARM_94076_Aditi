@@ -1,0 +1,10 @@
+12:04:17 **** Incremental Build of configuration Debug for project code3_LCD Scrolling Operation ****
+make -j16 all 
+arm-none-eabi-size  code3_LCD\ Scrolling\ Operation.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9748	     12	   1660	  11420	   2c9c	code3_LCD Scrolling Operation.elf
+Finished building: default.size.stdout
+ 
+
+12:04:17 Build Finished. 0 errors, 0 warnings. (took 458ms)
+
