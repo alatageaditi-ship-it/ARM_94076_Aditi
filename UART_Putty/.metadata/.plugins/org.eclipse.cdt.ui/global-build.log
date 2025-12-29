@@ -1,0 +1,7 @@
+20:48:03 **** Build of configuration Debug for project HAL_USART2 ****
+make -j16 all 
+arm-none-eabi-size  HAL_USART2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8568	     12	   1644	  10224	   27f0	HAL_USART2.elf
+Finished building: default.size.stdout
+ 
