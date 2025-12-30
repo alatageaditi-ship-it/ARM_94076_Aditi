@@ -1,0 +1,10 @@
+22:04:32 **** Incremental Build of configuration Debug for project MQ2_LCD_LED ****
+make -j16 all 
+arm-none-eabi-size  MQ2_LCD_LED.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15012	     92	   2068	  17172	   4314	MQ2_LCD_LED.elf
+Finished building: default.size.stdout
+ 
+
+22:04:32 Build Finished. 0 errors, 0 warnings. (took 460ms)
+
