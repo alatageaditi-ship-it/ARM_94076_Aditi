@@ -1,0 +1,40 @@
+/*
+ * dht11.h
+ *
+ *  Created on: Dec 31, 2025
+ *      Author: aditi
+ */
+
+#ifndef INC_DHT11_H_
+#define INC_DHT11_H_
+
+#ifndef DHT11_H
+#define DHT11_H
+#ifndef DHT11_H
+#define DHT11_H
+
+#include "stm32f4xx_hal.h"
+
+/* GPIO Configuration */
+#define DHT11_PORT GPIOA
+#define DHT11_PIN  GPIO_PIN_0   // PA0
+
+typedef struct
+{
+    uint8_t temperature;
+    uint8_t humidity;
+} DHT11_Data;
+
+/* Return values:
+ * 0 = OK
+ * 1 = No response
+ * 2 = Invalid response
+ * 3 = Checksum error
+ */
+uint8_t DHT11_Read(DHT11_Data *data);
+
+#endif
+
+
+
+#endif /* INC_DHT11_H_ */

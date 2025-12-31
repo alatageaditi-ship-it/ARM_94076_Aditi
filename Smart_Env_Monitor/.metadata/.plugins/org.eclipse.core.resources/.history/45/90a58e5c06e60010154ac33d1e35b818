@@ -1,0 +1,21 @@
+/*
+ * delay.h
+ *
+ *  Created on: Dec 31, 2025
+ *      Author: aditi
+ */
+
+#ifndef INC_DELAY_H_
+#define INC_DELAY_H_
+
+#ifndef DELAY_US_H
+#define DELAY_US_H
+
+#include "stm32f4xx_hal.h"
+
+void delay_us(uint16_t us);
+
+#endif
+
+
+#endif /* INC_DELAY_H_ */

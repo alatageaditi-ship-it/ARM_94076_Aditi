@@ -1,9 +1,4 @@
-/*
- * mq2.c
- *
- *  Created on: Dec 30, 2025
- *      Author: ADMIN
- */
+
 #include "mq2.h"
 /* Standard C libraries */
 #include <stdio.h>      // for

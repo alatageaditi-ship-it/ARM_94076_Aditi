@@ -1,0 +1,13 @@
+/*
+ * dht11.c
+ *
+ *  Created on: Dec 31, 2025
+ *      Author: aditi
+ */
+
+#ifndef SRC_DHT11_C_
+#define SRC_DHT11_C_
+
+
+
+#endif /* SRC_DHT11_C_ */

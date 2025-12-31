@@ -1,0 +1,23 @@
+/*
+ * delay.c
+ *
+ *  Created on: Dec 31, 2025
+ *      Author: aditi
+ */
+
+#ifndef SRC_DELAY_C_
+#define SRC_DELAY_C_
+
+#include "delay.h"
+
+extern volatile TIM_HandleTypeDef htim2;
+
+void delay_us(uint16_t us)
+{
+    __HAL_TIM_SET_COUNTER(&htim2, 0);
+    HAL_TIM_Base_Start(&htim2);
+    while (__HAL_TIM_GET_COUNTER(&htim2) < us);
+    HAL_TIM_Base_Stop(&htim2);
+}
+
+#endif /* SRC_DELAY_C_ */

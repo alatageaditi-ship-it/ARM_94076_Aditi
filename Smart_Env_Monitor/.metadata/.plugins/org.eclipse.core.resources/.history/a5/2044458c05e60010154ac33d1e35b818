@@ -1,0 +1,79 @@
+/*
+ * dht11.c
+ *
+ *  Created on: Dec 31, 2025
+ *      Author: aditi
+ */
+
+#ifndef SRC_DHT11_C_
+#define SRC_DHT11_C_
+
+#include "dht11.h"
+#include "delay_us.h"
+
+/* Set PA0 as Output */
+static void DHT11_Pin_Output(void)
+{
+    GPIO_InitTypeDef GPIO_InitStruct = {0};
+    GPIO_InitStruct.Pin = DHT11_PIN;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+    HAL_GPIO_Init(DHT11_PORT, &GPIO_InitStruct);
+}
+
+/* Set PA0 as Input */
+static void DHT11_Pin_Input(void)
+{
+    GPIO_InitTypeDef GPIO_InitStruct = {0};
+    GPIO_InitStruct.Pin = DHT11_PIN;
+    GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    HAL_GPIO_Init(DHT11_PORT, &GPIO_InitStruct);
+}
+
+uint8_t DHT11_Read(DHT11_Data *data)
+{
+    uint8_t bits[5] = {0};
+
+    /* Start signal */
+    DHT11_Pin_Output();
+    HAL_GPIO_WritePin(DHT11_PORT, DHT11_PIN, GPIO_PIN_RESET);
+    HAL_Delay(18);
+    HAL_GPIO_WritePin(DHT11_PORT, DHT11_PIN, GPIO_PIN_SET);
+    delay_us(30);
+    DHT11_Pin_Input();
+
+    /* Sensor response */
+    if (HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN))
+        return 1;
+
+    delay_us(80);
+    if (!HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN))
+        return 2;
+
+    delay_us(80);
+
+    /* Read 40 bits */
+    for (uint8_t i = 0; i < 40; i++)
+    {
+        while (!HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN));
+        delay_us(40);
+
+        if (HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN))
+            bits[i / 8] |= (1 << (7 - (i % 8)));
+
+        while (HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN));
+    }
+
+    /* Checksum */
+    if ((bits[0] + bits[1] + bits[2] + bits[3]) != bits[4])
+        return 3;
+
+    data->humidity = bits[0];
+    data->temperature = bits[2];
+
+    return 0;
+}
+
+
+#endif /* SRC_DHT11_C_ */

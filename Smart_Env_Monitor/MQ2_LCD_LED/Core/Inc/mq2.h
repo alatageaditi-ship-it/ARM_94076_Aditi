@@ -8,15 +8,6 @@
 #ifndef INC_MQ2_H_
 #define INC_MQ2_H_
 
-/*
- * mq2.h
- *
- *  Created on: Dec 30, 2025
- *      Author: ADMIN
- */
-
-#ifndef INC_MQ2_H_
-#define INC_MQ2_H_
 #include "main.h"
 /* Standard C libraries */
 #include <stdio.h>      // for
@@ -30,4 +21,3 @@ uint16_t read_adc(void);
 extern ADC_HandleTypeDef hadc1;
 #endif /* INC_MQ2_H_ */
 
-#endif /* INC_MQ2_H_ */
