@@ -1,0 +1,36 @@
+/*
+ * main.c
+ *
+ *  Created on: Dec 30, 2025
+ *      Author: aditi
+ */
+
+#ifndef SRC_MAIN_C_
+#define SRC_MAIN_C_
+
+ HAL_ADC_Start(&hadc1);
+	  HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
+	  val = HAL_ADC_GetValue(&hadc1);
+	 	  HAL_ADC_Stop(&hadc1);
+
+	 	  sprintf(str1, "MQ2 Gas Value: %d\r\n", val);
+	 	  HAL_UART_Transmit(&huart2, (uint8_t*)str1, strlen(str1), HAL_MAX_DELAY);
+
+	 	  if(val >= 2000)
+	 	  {
+	 	      sprintf(str2, "GAS DETECTED!!!\r\n");
+	 	      HAL_UART_Transmit(&huart2, (uint8_t*)str2, strlen(str2), HAL_MAX_DELAY);
+
+	 	      HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, GPIO_PIN_SET);
+	 	      HAL_Delay(1000);
+	 	      HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, GPIO_PIN_RESET);
+	 	  }
+
+
+	 	  HAL_Delay(1000);
+  }
+  /* USER CODE END 3 */
+}
+
+
+#endif /* SRC_MAIN_C_ */

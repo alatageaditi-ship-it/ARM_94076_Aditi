@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Smart_Env_Monitor_Project/Core/Inc/mq2_lcd_buzzer.h&apos;" deleteContents="false" description="Delete resource &apos;Smart_Env_Monitor_Project/Core/Inc/mq2_lcd_buzzer.h&apos;" element1="/Smart_Env_Monitor_Project/Core/Inc/mq2_lcd_buzzer.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1767239274184"/>
+</session>

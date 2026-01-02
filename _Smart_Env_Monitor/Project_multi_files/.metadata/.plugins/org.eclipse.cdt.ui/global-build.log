@@ -1,0 +1,28 @@
+12:55:38 **** Incremental Build of configuration Debug for project Smart_Env_Monitor_Project_Internship ****
+make -j16 all 
+arm-none-eabi-size  Smart_Env_Monitor_Project_Internship.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15752	     92	   2068	  17912	   45f8	Smart_Env_Monitor_Project_Internship.elf
+Finished building: default.size.stdout
+ 
+12:55:46 **** Incremental Build of configuration Debug for project Smart_Env_Monitor_Project_Internship ****
+make -j16 all 
+arm-none-eabi-size  Smart_Env_Monitor_Project_Internship.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15752	     92	   2068	  17912	   45f8	Smart_Env_Monitor_Project_Internship.elf
+Finished building: default.size.stdout
+ 
+12:56:00 **** Incremental Build of configuration Debug for project Smart_Env_Monitor_Project_Internship ****
+make -j16 all 
+arm-none-eabi-size  Smart_Env_Monitor_Project_Internship.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15752	     92	   2068	  17912	   45f8	Smart_Env_Monitor_Project_Internship.elf
+Finished building: default.size.stdout
+ 
+12:56:53 **** Incremental Build of configuration Debug for project Smart_Env_Monitor_Project_Internship ****
+make -j16 all 
+arm-none-eabi-size  Smart_Env_Monitor_Project_Internship.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15752	     92	   2068	  17912	   45f8	Smart_Env_Monitor_Project_Internship.elf
+Finished building: default.size.stdout
+ 

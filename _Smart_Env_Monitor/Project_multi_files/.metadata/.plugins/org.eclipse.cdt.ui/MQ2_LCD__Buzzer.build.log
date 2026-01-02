@@ -1,0 +1,10 @@
+14:54:52 **** Incremental Build of configuration Debug for project MQ2_LCD__Buzzer ****
+make -j16 all 
+arm-none-eabi-size  MQ2_LCD__Buzzer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14968	     92	   2068	  17128	   42e8	MQ2_LCD__Buzzer.elf
+Finished building: default.size.stdout
+ 
+
+14:54:52 Build Finished. 0 errors, 0 warnings. (took 410ms)
+
